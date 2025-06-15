@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import LaptopImg from "../../assets/home-main.svg";
 import Tilt from "react-parallax-tilt";
+import BlurText from '../../components/BlurText/BlurText';
 import {
-  AiFillGithub,
-  AiOutlineTwitter
+  AiFillGithub
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
+import { FaWhatsapp } from "react-icons/fa";
 
 
 
@@ -19,18 +19,35 @@ const About = () => {
             <Col md={8} className="home-about-description">
               <h1 style={{ fontSize: "2.6em" }}>About Me</h1>
               <p className="home-about-body">
-                <p>Hi, my name is Elie Ephram and I'm from Beirut, Lebanon.</p>
-                <p>Experienced in software and web development with expertise in
-                HTML, CSS, JavaScript. Specializing in modern web development
-                using React.js, Next.js, Node.js, and Express.js.</p>
-                <p>Proficient in database management with MS SQL Server and MongoDB. Designing
-                and building scalable web applications, optimizing backend
-                performance and ensuring seamless frontend-backend integration.</p>
-                <p>Key achievement: Developed and deployed multiple websites and
-                worked on eCommerce platforms like Salesforce commerce cloud for
-                Lebanon and UAE, significantly enhancing user experience and
-                streamlining other processing.</p>
-                </p>
+                <BlurText
+                  text="Hi, my name is Elie Ephram and I'm from Beirut, Lebanon."
+                  delay={100}
+                  animateBy="words"
+                  direction="top"
+                  className="mb-3 text-lg"
+                />
+                <BlurText
+                  text="Experienced in software and web development with expertise in HTML, CSS, JavaScript. Specializing in modern web development using React.js, Next.js, Node.js, and Express.js."
+                  delay={150}
+                  animateBy="words"
+                  direction="top"
+                  className="mb-3 text-lg"
+                />
+                <BlurText
+                  text="Proficient in database management with MS SQL Server and MongoDB. Designing and building scalable web applications, optimizing backend performance and ensuring seamless frontend-backend integration."
+                  delay={200}
+                  animateBy="words"
+                  direction="top"
+                  className="mb-3 text-lg"
+                />
+                <BlurText
+                  text="Key achievement: Developed and deployed multiple websites and worked on eCommerce platforms like Salesforce commerce cloud for Lebanon and UAE, significantly enhancing user experience and streamlining other processing."
+                  delay={250}
+                  animateBy="words"
+                  direction="top"
+                  className="mb-3 text-lg"
+                />
+              </p>
             </Col>
             <Col md={4} className="myAvtar">
               <Tilt>
@@ -40,15 +57,14 @@ const About = () => {
           </Row>
           <Row>
             <Col md={12} className="home-about-social">
-              <h1>FIND ME ON</h1>
+              <h1>Lets Connect</h1>
               <p>
-                Please don't hesitate to reach out to me and{" "}
-                <span className="yellow">connect.</span>
+                Let's discuss your next project.
               </p>
               <ul className="home-about-social-links">
                 <li className="social-icons">
                   <a
-                    href="https://github.com/19sajib"
+                    href="https://github.com/ProgSecDev"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
@@ -59,18 +75,7 @@ const About = () => {
                 </li>
                 <li className="social-icons">
                   <a
-                    href="https://twitter.com/19sajib"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                    aria-label="twitter"
-                  >
-                    <AiOutlineTwitter />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://www.linkedin.com/in/19sajib/"
+                    href="https://www.linkedin.com/in/elie-ephram-280b90206/"
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour  home-social-icons"
@@ -81,13 +86,13 @@ const About = () => {
                 </li>
                 <li className="social-icons">
                   <a
-                    href="https://leetcode.com/19sajib/"
+                    href="https://wa.me/961xxxxxxxx" // Replace with your WhatsApp full number
                     target="_blank"
                     rel="noreferrer"
                     className="icon-colour home-social-icons"
-                    aria-label="instagram"
+                    aria-label="whatsapp"
                   >
-                    <SiLeetcode />
+                    <FaWhatsapp />
                   </a>
                 </li>
               </ul>

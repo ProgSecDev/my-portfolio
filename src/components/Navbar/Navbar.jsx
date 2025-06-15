@@ -4,21 +4,22 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/Logo.png";
 // import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 // import { CgGitFork } from "react-icons/cg";
-import {
-  // AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineContacts
-} from "react-icons/ai";
-import { GiSkills } from "react-icons/gi"
-import { CgFileDocument } from "react-icons/cg";
+// import {
+//   // AiFillStar,
+//   AiOutlineHome,
+//   AiOutlineFundProjectionScreen,
+//   AiOutlineContacts
+// } from "react-icons/ai";
+// import { GiSkills } from "react-icons/gi"
+// import { CgFileDocument } from "react-icons/cg";
 
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const location = useLocation();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -54,8 +55,13 @@ function NavBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+              <Nav.Link 
+              as={Link}
+              to="/" onClick={() => updateExpanded(false)}
+              className={location.pathname === "/" ? "active" : ""}
+              >
+                {/* <AiOutlineHome style={{ marginBottom: "2px" }} />  */} 
+                Home
               </Nav.Link>
             </Nav.Item>
 
@@ -64,8 +70,10 @@ function NavBar() {
                 as={Link}
                 to="/skillset"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/skillset" ? "active" : ""}
               >
-                <GiSkills style={{ marginBottom: "2px" }} /> Skillset
+                {/* <GiSkills style={{ marginBottom: "2px" }} />  */}
+                My Skills
               </Nav.Link>
             </Nav.Item>
 
@@ -74,11 +82,12 @@ function NavBar() {
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/project" ? "active" : ""}
               >
-                <AiOutlineFundProjectionScreen
+                {/* <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                />{" "} */}
+                My Projects
               </Nav.Link>
             </Nav.Item>
 
@@ -87,8 +96,10 @@ function NavBar() {
                 as={Link}
                 to="/resume"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/resume" ? "active" : ""}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                {/* <CgFileDocument style={{ marginBottom: "2px" }} />  */}
+                My Resume
               </Nav.Link>
             </Nav.Item>
 
@@ -97,8 +108,10 @@ function NavBar() {
                 as={Link}
                 to="/contact"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/contact" ? "active" : ""}
               >
-                <AiOutlineContacts style={{ marginBottom: "2px" }} /> Contact Me
+                {/* <AiOutlineContacts style={{ marginBottom: "2px" }} />  */}
+                Contact Me
               </Nav.Link>
             </Nav.Item>
 
