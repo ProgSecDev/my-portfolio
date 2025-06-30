@@ -1,35 +1,53 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../../assets/Logo.png";
-// import Button from "react-bootstrap/Button";
-import { Link, useLocation } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
-// import {
-//   // AiFillStar,
-//   AiOutlineHome,
-//   AiOutlineFundProjectionScreen,
-//   AiOutlineContacts
-// } from "react-icons/ai";
-// import { GiSkills } from "react-icons/gi"
-// import { CgFileDocument } from "react-icons/cg";
-
+import ResumeButton from '../ResumeButton/ResumeButton';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
-  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("home");
 
-  function scrollHandler() {
-    if (window.scrollY >= 20) {
-      updateNavbar(true);
-    } else {
-      updateNavbar(false);
+  useEffect(() => {
+  function handleScroll() {
+  const sections = ["home", "about-me", "skills", "projects", "contact-me"];
+  let found = false;
+
+  for (let i = 0; i < sections.length; i++) {
+    const section = document.getElementById(sections[i]);
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        if (activeLink !== sections[i]) {
+          setActiveLink(sections[i]);
+          const newHash = `#${sections[i]}`;
+          if (window.location.hash !== newHash) {
+            window.history.replaceState(null, "", newHash);
+          }
+        }
+        found = true;
+        break;
+      }
     }
   }
 
-  window.addEventListener("scroll", scrollHandler);
+  if (!found && activeLink !== "home") {
+    setActiveLink("home");
+    if (window.location.hash !== "#home") {
+      window.history.replaceState(null, "", "#home");
+    }
+  }
+
+  updateNavbar(window.scrollY >= 20);
+}
+
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, [activeLink]);
+
 
   return (
     <Navbar
@@ -53,78 +71,73 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav className="ms-auto">
             <Nav.Item>
-              <Nav.Link 
-              as={Link}
-              to="/" onClick={() => updateExpanded(false)}
-              className={location.pathname === "/" ? "active" : ""}
+              <Nav.Link
+                href="#home"
+                onClick={() => {
+  updateExpanded(false);
+}}
+className={activeLink === "home" ? "active" : undefined}
+
               >
-                {/* <AiOutlineHome style={{ marginBottom: "2px" }} />  */} 
                 Home
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/skillset"
-                onClick={() => updateExpanded(false)}
-                className={location.pathname === "/skillset" ? "active" : ""}
+                href="#about-me"
+onClick={() => {
+  updateExpanded(false);
+}}
+className={activeLink === "about-me" ? "active" : undefined}
+
               >
-                {/* <GiSkills style={{ marginBottom: "2px" }} />  */}
+                About Me
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                href="#skills"
+                onClick={() => {
+  updateExpanded(false);
+}}
+className={activeLink === "skills" ? "active" : undefined}
+
+              >
                 My Skills
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-                className={location.pathname === "/project" ? "active" : ""}
+                href="#projects"
+                onClick={() => {
+  updateExpanded(false);
+}}
+className={activeLink === "projects" ? "active" : undefined}
+
               >
-                {/* <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "} */}
                 My Projects
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-                className={location.pathname === "/resume" ? "active" : ""}
-              >
-                {/* <CgFileDocument style={{ marginBottom: "2px" }} />  */}
-                My Resume
-              </Nav.Link>
-            </Nav.Item>
+                href="#contact-me"
+                onClick={() => {
+  updateExpanded(false);
+}}
+className={activeLink === "contact-me" ? "active" : undefined}
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/contact"
-                onClick={() => updateExpanded(false)}
-                className={location.pathname === "/contact" ? "active" : ""}
               >
-                {/* <AiOutlineContacts style={{ marginBottom: "2px" }} />  */}
                 Contact Me
               </Nav.Link>
             </Nav.Item>
 
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/19sajib/portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+            <ResumeButton />
           </Nav>
         </Navbar.Collapse>
       </Container>

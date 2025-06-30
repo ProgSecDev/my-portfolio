@@ -1,8 +1,8 @@
+:root {
+  --bold-word: #18ffff;
+}
 html {
-    --section-background-color: linear-gradient(
-      to bottom left,
-      rgb(5, 8, 40), rgb(1, 4, 39)
-    );
+    --section-background-color: linear-gradient(to left, rgb(0, 0, 0), rgb(26, 35, 126));
   
     --image-gradient: linear-gradient(
       to bottom left,
@@ -10,11 +10,17 @@ html {
     );
   
     --imp-text-color: #7500fa;
-    --imp-bold-text-color: #7500fa;
+    --yellow-A400: #FFEA00;
+
+    scroll-behavior: smooth;
   }
   
   .yellow {
-    color: var(--imp-bold-text-color) !important;
+    color: var(--yellow-A400) !important;
+  }
+
+  .cyan {
+    color: var(--bold-word) !important;
   }
   
   .purple {
@@ -268,7 +274,6 @@ html {
     background-image: #212121;
     background-position: top center;
     background-repeat: no-repeat;
-    padding-bottom: 30px !important;
     padding-top: 30px !important;
   }
   
@@ -329,7 +334,7 @@ html {
   .home-about-section {
     position: relative;
     padding-bottom: 70px !important;
-    padding-top: 70px !important;
+    padding-top: 10px !important;
   }
   
   .home-about-description {
@@ -469,7 +474,7 @@ html {
   
   .about-section {
     position: relative !important;
-    padding-top: 150px !important;
+    padding-top: 10px !important;
     padding-bottom: 30px !important;
     background-image: var(--section-background-color) !important;
     color: white !important;
@@ -480,12 +485,14 @@ html {
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
-    border: 1.7px solid rgb(89, 0, 190) !important;
+    border: 2px solid var(--bold-word) !important;
     vertical-align: middle !important;
     text-align: center !important;
-    border-radius: 5px !important;
+    border-radius: 50% !important;
+    width: 100px !important;
+    height: 100px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(117, 0, 250, 0.37) !important;
+    box-shadow: 1px 1px 5px 3px var(--bold-word) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
@@ -499,7 +506,7 @@ html {
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid rgba(117, 0, 250, 1) !important;
+    border: 2.2px solid var(--bold-word) !important;
   }
   .tech-icon-images {
     padding: 20px !important;
@@ -530,7 +537,7 @@ html {
 /* --------- */
 .project-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
 }

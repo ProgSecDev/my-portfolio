@@ -1,14 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import LaptopImg from "../../assets/home-main.svg";
-import Tilt from "react-parallax-tilt";
 import BlurText from '../../components/BlurText/BlurText';
-import {
-  AiFillGithub
-} from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-
 
 
 const About = () => {
@@ -16,9 +8,9 @@ const About = () => {
       <Container fluid className="home-about-section" id="about">
         <Container>
           <Row>
-            <Col md={8} className="home-about-description">
+            <Col md={18} className="home-about-description">
               <h1 style={{ fontSize: "2.6em" }}>About Me</h1>
-              <p className="home-about-body">
+              <div className="home-about-body">
                 <BlurText
                   text="Hi, my name is Elie Ephram and I'm from Beirut, Lebanon."
                   delay={100}
@@ -47,55 +39,7 @@ const About = () => {
                   direction="top"
                   className="mb-3 text-lg"
                 />
-              </p>
-            </Col>
-            <Col md={4} className="myAvtar">
-              <Tilt>
-                <img src={LaptopImg} className="img-fluid" alt="avatar" />
-              </Tilt>
-            </Col>
-          </Row>
-          <Row>
-            <Col md={12} className="home-about-social">
-              <h1>Lets Connect</h1>
-              <p>
-                Let's discuss your next project.
-              </p>
-              <ul className="home-about-social-links">
-                <li className="social-icons">
-                  <a
-                    href="https://github.com/ProgSecDev"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                    aria-label="github"
-                  >
-                    <AiFillGithub />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://www.linkedin.com/in/elie-ephram-280b90206/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour  home-social-icons"
-                    aria-label="linkedin"
-                  >
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-                <li className="social-icons">
-                  <a
-                    href="https://wa.me/961xxxxxxxx" // Replace with your WhatsApp full number
-                    target="_blank"
-                    rel="noreferrer"
-                    className="icon-colour home-social-icons"
-                    aria-label="whatsapp"
-                  >
-                    <FaWhatsapp />
-                  </a>
-                </li>
-              </ul>
+              </div>
             </Col>
           </Row>
         </Container>

@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from '../assets/about.png'
-import About from '../components/Home/About';
-import Type from '../components/Home/Type';
+import profileImage from "../assets/Portfolio-profile.png";
+import About from "../components/Home/About";
+import Type from "../components/Home/Type";
+import Techstack from "../components/Skillset/Techstack";
+import Toolstack from "../components/Skillset/Toolstack";
 import SplitText from "../components/SplitText/SplitText";
+import ProjectCard from "../components/Projects/ProjectCard";
+import pg from "../assets/projects/pg.png";
+import spicyfood from "../assets/projects/spicy-food.png";
+import admirelb from "../assets/projects/admirelb.png";
+import krypto from "../assets/projects/krypto.png";
+import kickstart from "../assets/projects/kickstart.png";
+import ContactForm from "../components/Contact/Contact";
 
 const Home = () => {
   return (
@@ -44,18 +53,128 @@ const Home = () => {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={profileImage}
                 alt="home pic"
                 className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                style={{
+                  maxHeight: "550px",
+                  marginTop: "-80px",
+                  zIndex: "1",
+                }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
-      <About />
+      <Container fluid className="home-about-section" id="about-me">
+        <About />
+      </Container>
+      <Container fluid className="about-section" id="skills">
+        <Container>
+          <h1 className="project-heading">
+            My Code <strong className="cyan"> DNA </strong>
+          </h1>
+
+          <Techstack />
+
+          <h1 className="project-heading">
+            Stack & <strong className="cyan">Tools</strong>
+          </h1>
+          <Toolstack />
+        </Container>
+      </Container>
+
+      <Container fluid className="project-section" id="projects">
+        <Container>
+          <h1 className="project-heading">
+            Built with <strong className="cyan">Passion </strong>
+          </h1>
+          <p style={{ color: "white" }}>
+            Some of my proudest creations - crafted with code and caffeine.
+          </p>
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={spicyfood}
+                isBlog={false}
+                title="Spicy Food"
+                description="This project is a fully responsive static website developed for a Lebanese 
+                spice brand. The site showcases the company’s history, values, and diverse product 
+                offerings—from vibrant spice blends to private-label packaging solutions.
+                Built with React.Js, CSS, and JavaScript, it features a sleek and visually rich layout, 
+                including high-resolution images and intuitive navigation. The design emphasizes 
+                user-friendly experience and aesthetic appeal, highlighting key product categories 
+                (Blends & Powders) and packaging types (Jar, Sachet, Bags, Silver Vacuum Bag)."
+                ghLink="https://github.com/ProgSecDev/spicy-food"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={admirelb}
+                isBlog={false}
+                title="AdmireLB"
+                description="This project is a modern, responsive website built for AdmireLB, a 
+                multinational advertising agency headquartered in Lebanon. The site presents the 
+                agency’s mission, regional presence (Lebanon, Cyprus, KSA, Dubai, Qatar), and its 
+                core services—ranging from digital marketing strategies to creative graphic design. 
+                Developed using WordPress Technology, the site focuses on clean visuals, 
+                smooth user interaction, and brand storytelling. The layout reflects AdmireLB’s 
+                professionalism while highlighting their values, client-centric approach, and 
+                long-standing industry experience."
+                link="https://www.admirelb.com"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={kickstart}
+                isBlog={false}
+                title="Project 3"
+                description=""
+                ghLink="https://github.com/ProgSecDev/"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={pg}
+                isBlog={false}
+                title="Project 4"
+                description=""
+                ghLink="https://github.com/ProgSecDev/"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={krypto}
+                isBlog={false}
+                title="Project 5"
+                description=""
+                ghLink="https://github.com/ProgSecDev/"
+                demoLink=""
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={kickstart}
+                isBlog={false}
+                title="Project 6"
+                description=""
+                ghLink="https://github.com/ProgSecDev/"
+              />
+            </Col>
+          </Row>
+        </Container>
+      </Container>
+
+      <Container style={{ padding: "60px" }} id="contact-me">
+        <ContactForm />
+      </Container>
     </section>
   );
-}
+};
 
-export default Home
+export default Home;

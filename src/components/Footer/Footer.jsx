@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-// import { AiFillGithub, AiOutlineTwitter } from "react-icons/ai";
-// import { FaLinkedinIn } from "react-icons/fa";
-// import { FaWhatsapp } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   let date = new Date();
@@ -10,16 +10,10 @@ const Footer = () => {
   return (
     <Container fluid className="footer">
       <Row>
-        {/* <Col md="4" className="footer-copywright">
-          <span>
-            Empowering your Software & Web with innovative design & solutions.
-          </span>
-        </Col> */}
-        <Col md="12" className="footer-copywright">
-          <span>© {year} Designed by Elie Ephram. All Rights Reserved.</span>
-        </Col>
-        {/* <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+        <Col md={12} className="home-about-social">
+          <h1>Lets Connect</h1>
+          <p>Let's discuss your next project.</p>
+          <ul className="home-about-social-links">
             <li className="social-icons">
               <a
                 href="https://github.com/ProgSecDev"
@@ -54,7 +48,10 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-        </Col> */}
+        </Col>
+        <Col md="12" className="footer-copywright">
+          <span>© {year} Designed by Elie Ephram. All Rights Reserved.</span>
+        </Col>
       </Row>
     </Container>
   );

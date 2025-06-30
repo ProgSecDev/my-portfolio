@@ -1,30 +1,21 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiHeroku,
-  SiVercel,
-  SiNetlify
-} from "react-icons/si";
+
+import vscode from '../../assets/skills/vscode.png';
+import postman from '../../assets/skills/postman.png';
+import visualstudio from '../../assets/skills/Visual_Studio.png';
 
 const Toolstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <img src={vscode} alt="html"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <img src={postman} alt="html"/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNetlify />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <img src={visualstudio} alt="html"/>
       </Col>
     </Row>
   );

@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const ProjectCard = (props) => {
   return (
@@ -35,31 +36,49 @@ const ProjectCard = (props) => {
         }}
       >
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify",fontSize:"15px" }}>
+        <Card.Text style={{ textAlign: "justify", fontSize: "15px" }}>
           {props.description}
         </Card.Text>
-        <Button
-          variant="primary"
-          href={props.ghLink}
-          target="_blank"
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            alignContent: "flex-end",
-            textAlign: "center",
-            position: "relative",
-            bottom: "0px",
-          }}
-        >
-          <BsGithub /> &nbsp;
-          {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
-        {"\n"}
-        {"\n"}
 
-        {/* If the component contains Demo link and if it's not a Blog then, it will render the below component  */}
+        {/* Show GitHub if ghLink exists */}
+        {props.ghLink && (
+          <Button
+            variant="primary"
+            href={props.ghLink}
+            target="_blank"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <BsGithub /> &nbsp;
+            {props.isBlog ? "Blog" : "GitHub"}
+          </Button>
+        )}
 
+        {/* Show custom link if link prop is provided and ghLink is not */}
+        {!props.ghLink && props.link && (
+          <Button
+            variant="primary"
+            href={props.link}
+            target="_blank"
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textAlign: "center",
+              marginBottom: "10px",
+            }}
+          >
+            <FaExternalLinkAlt /> &nbsp;
+            Visit Site
+          </Button>
+        )}
+
+        {/* Optional demo button */}
         {!props.isBlog && props.demoLink && (
           <Button
             variant="primary"
@@ -69,19 +88,17 @@ const ProjectCard = (props) => {
               marginTop: "10px",
               display: "flex",
               justifyContent: "center",
-              alignContent: "flex-end",
               alignItems: "center",
               textAlign: "center",
-              position: "static",
-              bottom: "0px",
             }}
           >
             <CgWebsite /> &nbsp;
-            {"Demo"}
+            Demo
           </Button>
         )}
       </Card.Body>
     </Card>
   );
 };
+
 export default ProjectCard;

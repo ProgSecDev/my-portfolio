@@ -108,7 +108,7 @@ const SplitText = ({
   ]);
 
   return (
-    <p
+    <div
       ref={ref}
       className={`split-parent ${className}`}
       style={{
@@ -120,7 +120,7 @@ const SplitText = ({
       }}
     >
       {text}
-    </p>
+    </div>
   );
 };
 
