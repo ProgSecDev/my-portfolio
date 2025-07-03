@@ -1,6 +1,6 @@
 :root {
   --bold-word: #18ffff;
-  --box-shadow: #18ffff;
+  --box-shadow: #fff;
 }
 
 html {
@@ -48,7 +48,7 @@ html {
     height: 100%;
     z-index: 999999;
     background-color: #0c0513;
-    background-image: url(./assets/pre.svg);
+    background-image: url(./assets/tube-spinner.svg);
     background-repeat: no-repeat;
     background-position: center;
   }
