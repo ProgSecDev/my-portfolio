@@ -7,12 +7,10 @@ import Techstack from "../components/Skillset/Techstack";
 import Toolstack from "../components/Skillset/Toolstack";
 import SplitText from "../components/SplitText/SplitText";
 import ProjectCard from "../components/Projects/ProjectCard";
-import pg from "../assets/projects/pg.png";
 import spicyfood from "../assets/projects/spicy-food.png";
 import admirelb from "../assets/projects/admirelb.png";
-import krypto from "../assets/projects/krypto.png";
-import kickstart from "../assets/projects/kickstart.png";
 import ContactForm from "../components/Contact/Contact";
+import GlareHover from '../components/Glare Hover/GlareHover';
 
 const Home = () => {
   return (
@@ -84,6 +82,21 @@ const Home = () => {
         </Container>
       </Container>
 
+      {/* <div style={{ height: '600px', position: 'relative' }}>
+  <GlareHover
+    glareColor="#ffffff"
+    glareOpacity={0.3}
+    glareAngle={-30}
+    glareSize={300}
+    transitionDuration={800}
+    playOnce={false}
+  >
+    <h2 style={{ fontSize: '3rem', fontWeight: '900', color: '#333', margin: 0 }}>
+      Hover Me
+    </h2>
+  </GlareHover>
+</div> */}
+
       <Container fluid className="project-section" id="projects">
         <Container>
           <h1 className="project-heading">
@@ -94,22 +107,45 @@ const Home = () => {
           </p>
           <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
             <Col md={4} className="project-card">
-              <ProjectCard
-                imgPath={spicyfood}
-                isBlog={false}
-                title="Spicy Food"
-                description="This project is a fully responsive static website developed for a Lebanese 
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
+                <ProjectCard
+                  imgPath={spicyfood}
+                  isBlog={false}
+                  title="Spicy Food"
+                  description="This project is a fully responsive static website developed for a Lebanese 
                 spice brand. The site showcases the company’s history, values, and diverse product 
                 offerings—from vibrant spice blends to private-label packaging solutions.
                 Built with React.Js, CSS, and JavaScript, it features a sleek and visually rich layout, 
                 including high-resolution images and intuitive navigation. The design emphasizes 
                 user-friendly experience and aesthetic appeal, highlighting key product categories 
                 (Blends & Powders) and packaging types (Jar, Sachet, Bags, Silver Vacuum Bag)."
-                ghLink="https://github.com/ProgSecDev/spicy-food"
-              />
+                  ghLink="https://github.com/ProgSecDev/spicy-food"
+                />
+              </GlareHover>
             </Col>
 
             <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
               <ProjectCard
                 imgPath={admirelb}
                 isBlog={false}
@@ -124,9 +160,21 @@ const Home = () => {
                 long-standing industry experience."
                 link="https://www.admirelb.com"
               />
+              </GlareHover>
             </Col>
 
-            <Col md={4} className="project-card">
+            {/* <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
               <ProjectCard
                 imgPath={kickstart}
                 isBlog={false}
@@ -134,9 +182,21 @@ const Home = () => {
                 description=""
                 ghLink="https://github.com/ProgSecDev/"
               />
+              </GlareHover>
             </Col>
 
             <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
               <ProjectCard
                 imgPath={pg}
                 isBlog={false}
@@ -144,9 +204,21 @@ const Home = () => {
                 description=""
                 ghLink="https://github.com/ProgSecDev/"
               />
+              </GlareHover>
             </Col>
 
             <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
               <ProjectCard
                 imgPath={krypto}
                 isBlog={false}
@@ -155,9 +227,21 @@ const Home = () => {
                 ghLink="https://github.com/ProgSecDev/"
                 demoLink=""
               />
+              </GlareHover>
             </Col>
 
             <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
               <ProjectCard
                 imgPath={kickstart}
                 isBlog={false}
@@ -165,7 +249,8 @@ const Home = () => {
                 description=""
                 ghLink="https://github.com/ProgSecDev/"
               />
-            </Col>
+              </GlareHover>
+            </Col> */}
           </Row>
         </Container>
       </Container>

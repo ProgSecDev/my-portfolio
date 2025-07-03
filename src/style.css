@@ -1,6 +1,8 @@
 :root {
   --bold-word: #18ffff;
+  --box-shadow: #18ffff;
 }
+
 html {
     --section-background-color: linear-gradient(to left, rgb(0, 0, 0), rgb(26, 35, 126));
   
@@ -13,6 +15,10 @@ html {
     --yellow-A400: #FFEA00;
 
     scroll-behavior: smooth;
+  }
+
+  .white {
+    color: var(--white) !important;
   }
   
   .yellow {
@@ -367,10 +373,10 @@ html {
   .home-social-icons {
     position: relative !important;
     display: inline-block !important;
-    width: 40px !important;
-    height: 40px !important;
+    width: 50px !important;
+    height: 50px !important;
     text-align: center !important;
-    font-size: 1.2em !important;
+    font-size: 1.5em !important;
     line-height: 2em !important;
     background: #424242 !important;
     border-radius: 50% !important;
@@ -397,9 +403,9 @@ html {
   }
   
   .home-social-icons:hover {
-    color: #18FFFF;
-    box-shadow: 0 0 5px #18FFFF;
-    text-shadow: 0 0 2px #18FFFF;
+    color: #000;
+    box-shadow: 0 0 9px #fff;
+    text-shadow: 0 0 9px #18FFFF;
   }
   
   .social-icons {
@@ -481,7 +487,7 @@ html {
   }
   
   .tech-icons {
-    font-size: 4.5em !important;
+    font-size: 4em !important;
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.93 !important;
@@ -506,7 +512,8 @@ html {
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid var(--bold-word) !important;
+    border: 2.2px solid #fff !important;
+    box-shadow: 1px 1px 5px 3px #fff !important;
   }
   .tech-icon-images {
     padding: 20px !important;
@@ -551,7 +558,7 @@ html {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px rgb(72, 0, 155) !important;
+  box-shadow: 0 4px 5px 3px var(--bold-word) !important;
   /* box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important; */
   color: white !important;
   background-color: transparent !important;
@@ -563,7 +570,7 @@ html {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   /* box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important; */
-  box-shadow: 0 4px 5px 3px rgba(117, 0, 250, 1) !important;
+  box-shadow: 0 4px 5px 3px #fff !important;
 }
 
 .blog-card {
@@ -612,16 +619,16 @@ html {
 .btn-primary {
   /* color: #fff !important; */
   color: rgb(24, 2, 44) !important;
-  background-color: #7500fa !important;
-  border-color: #7500fa !important;
+  background-color: var(--bold-word) !important;
+  border-color: var(--bold-word) !important;
   /* background-color: #623686 !important;
   border-color: #623686 !important; */
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #7500fa !important;
-  border-color: #7500fa !important;
+  color: #000 !important;
+  background-color: var(--bold-word) !important;
+  box-shadow: 0 0 9px #fff !important;
   /* background-color: #6d20c5d7 !important;
   border-color: #6d20c5d7 !important; */
 }

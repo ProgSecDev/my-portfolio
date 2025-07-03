@@ -38,7 +38,7 @@ const Footer = () => {
             </li>
             <li className="social-icons">
               <a
-                href="https://wa.me/961xxxxxxxx" // Replace with your WhatsApp full number
+                href="https://wa.me/96176070563" // Replace with your WhatsApp full number
                 target="_blank"
                 rel="noreferrer"
                 className="icon-colour home-social-icons"

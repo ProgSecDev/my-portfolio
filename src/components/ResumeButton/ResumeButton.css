@@ -1,6 +1,12 @@
+:root {
+  --bold-word: #18ffff;
+  --box-shadow: #fff;
+  --black: #000;
+}
+
 .resume-btn {
-  background-color: #0d6efd;
-  color: white;
+  background-color: var(--bold-word);
+  color: var(--black);
   padding: 0.6rem 1.4rem;
   margin-left: 20px;
   font-size: 1rem;
@@ -11,8 +17,9 @@
 }
 
 .resume-btn:hover {
-  background-color: #0b5ed7;
-  box-shadow: 0 0 12px #0d6efd88;
+  color: var(--black) !important;
+  background-color: var(--bold-word);
+  box-shadow: 0 0 9px var(--box-shadow) !important;
 }
 
 .resume-btn:disabled {

@@ -1,3 +1,12 @@
+:root {
+  --bold-word: #18ffff;
+  --box-shadow: #18ffff;
+}
+
+h1.white {
+  color: white !important;
+}
+
 .contact-form{
     padding: 0 3rem 0 3rem;
     display: flex;
@@ -34,14 +43,14 @@
     height: 3rem;
     padding: 0.3em;
     outline: none;
-    border: 2px solid #40008a;
+    border: 2px solid var(--box-shadow);
     border-radius: 8px;
     font-size: 19px;
     color: white   
 }
 
 .c-right .user:hover{
-    box-shadow: 0 0 9px #7500fa;
+    box-shadow: 0 0 9px #fff;
 }
 
 input{
@@ -65,6 +74,7 @@ textarea{
     top: 1rem;
     left: 8rem;
 }
+
 
 @media screen and (max-width: 480px) {
     .contact-form{
