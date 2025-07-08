@@ -36,7 +36,10 @@ const ProjectCard = (props) => {
         }}
       >
         <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify", fontSize: "15px" }}>
+        <Card.Text
+          className="project-description"
+          style={{ textAlign: "left" }}
+        >
           {props.description}
         </Card.Text>
 
@@ -73,8 +76,7 @@ const ProjectCard = (props) => {
               marginBottom: "10px",
             }}
           >
-            <FaExternalLinkAlt /> &nbsp;
-            Visit Site
+            <FaExternalLinkAlt /> &nbsp; Visit Site
           </Button>
         )}
 
@@ -92,8 +94,7 @@ const ProjectCard = (props) => {
               textAlign: "center",
             }}
           >
-            <CgWebsite /> &nbsp;
-            Demo
+            <CgWebsite /> &nbsp; Demo
           </Button>
         )}
       </Card.Body>

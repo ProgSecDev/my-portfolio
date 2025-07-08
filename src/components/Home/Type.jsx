@@ -7,12 +7,12 @@ const Type = () => {
           options={{
             strings: [
               "Software Developer",
-              "Full Stack Developer",
-              "Mobile App Developer"
+              "Web Developer",
+              "Full Stack Developer"
             ],
             autoStart: true,
             loop: true,
-            deleteSpeed: 50,
+            deleteSpeed: 90,
           }}
         />
       )

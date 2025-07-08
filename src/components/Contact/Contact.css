@@ -43,10 +43,10 @@ h1.white {
     height: 3rem;
     padding: 0.3em;
     outline: none;
-    border: 2px solid var(--box-shadow);
+    border: 2px solid var(--bold-word);
     border-radius: 8px;
     font-size: 19px;
-    color: white   
+    color: white;  
 }
 
 .c-right .user:hover{

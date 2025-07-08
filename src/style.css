@@ -36,6 +36,10 @@ html {
   button:focus {
     box-shadow: none !important;
   }
+
+  [id] {
+  scroll-margin-top: 120px; /* adjust based on your navbar height */
+}
   
   /* --------- */
   /*  Preloader */
@@ -67,23 +71,23 @@ html {
   /* --------- */
   
   ::-webkit-scrollbar {
-    width: 7px;
+    width: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #2d005c;
+    background: var(--white);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgba(77, 1, 165, 0.959);
+    background: var(--bold-word);
     border-radius: 12px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(121, 7, 250);
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(26, 35, 126));
     border-radius: 12px;
   }
   
@@ -512,7 +516,7 @@ html {
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
-    border: 2.2px solid #fff !important;
+    border: 2.2px solid var(--bold-word) !important;
     box-shadow: 1px 1px 5px 3px #fff !important;
   }
   .tech-icon-images {

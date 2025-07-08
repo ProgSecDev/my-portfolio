@@ -9,8 +9,9 @@ import SplitText from "../components/SplitText/SplitText";
 import ProjectCard from "../components/Projects/ProjectCard";
 import spicyfood from "../assets/projects/spicy-food.png";
 import admirelb from "../assets/projects/admirelb.png";
+import naimcenter from "../assets/projects/naimcenter.png";
 import ContactForm from "../components/Contact/Contact";
-import GlareHover from '../components/Glare Hover/GlareHover';
+import GlareHover from "../components/Glare Hover/GlareHover";
 
 const Home = () => {
   return (
@@ -122,13 +123,14 @@ const Home = () => {
                   imgPath={spicyfood}
                   isBlog={false}
                   title="Spicy Food"
-                  description="This project is a fully responsive static website developed for a Lebanese 
-                spice brand. The site showcases the company’s history, values, and diverse product 
-                offerings—from vibrant spice blends to private-label packaging solutions.
-                Built with React.Js, CSS, and JavaScript, it features a sleek and visually rich layout, 
-                including high-resolution images and intuitive navigation. The design emphasizes 
-                user-friendly experience and aesthetic appeal, highlighting key product categories 
-                (Blends & Powders) and packaging types (Jar, Sachet, Bags, Silver Vacuum Bag)."
+                  description={
+                    <>
+                  This project is a fully responsive static website developed for a Lebanese spice brand. The site showcases the company’s 
+                  history, values, and diverse product offerings—from vibrant spice blends to private-label packaging solutions. <span className="cyan">Built with React.Js, CSS, and JavaScript</span>, it features a sleek and visually rich layout, including high-resolution 
+                  images and intuitive navigation. The design emphasizes user-friendly experience and aesthetic appeal, highlighting key 
+                  product categories (Blends & Powders) and packaging types (Jar, Sachet, Bags, Silver Vacuum Bag).
+                  </>
+                  }
                   ghLink="https://github.com/ProgSecDev/spicy-food"
                 />
               </GlareHover>
@@ -146,42 +148,21 @@ const Home = () => {
                 playOnce={false}
                 style={{ border: "none", background: "transparent" }}
               >
-              <ProjectCard
-                imgPath={admirelb}
-                isBlog={false}
-                title="AdmireLB"
-                description="This project is a modern, responsive website built for AdmireLB, a 
-                multinational advertising agency headquartered in Lebanon. The site presents the 
-                agency’s mission, regional presence (Lebanon, Cyprus, KSA, Dubai, Qatar), and its 
-                core services—ranging from digital marketing strategies to creative graphic design. 
-                Developed using WordPress Technology, the site focuses on clean visuals, 
-                smooth user interaction, and brand storytelling. The layout reflects AdmireLB’s 
-                professionalism while highlighting their values, client-centric approach, and 
-                long-standing industry experience."
-                link="https://www.admirelb.com"
-              />
-              </GlareHover>
-            </Col>
-
-            {/* <Col md={4} className="project-card">
-              <GlareHover
-                width="100%"
-                height="100%"
-                glareColor="#ffffff"
-                glareOpacity={0.25}
-                glareAngle={-30}
-                glareSize={300}
-                transitionDuration={800}
-                playOnce={false}
-                style={{ border: "none", background: "transparent" }}
-              >
-              <ProjectCard
-                imgPath={kickstart}
-                isBlog={false}
-                title="Project 3"
-                description=""
-                ghLink="https://github.com/ProgSecDev/"
-              />
+                <ProjectCard
+                  imgPath={admirelb}
+                  isBlog={false}
+                  title="AdmireLB"
+                  description={
+                    <>
+                    This project is a modern, responsive website built for AdmireLB, a multinational advertising agency headquartered in Lebanon. 
+                    The site presents the agency’s mission, regional presence (Lebanon, Cyprus, KSA, Dubai, Qatar), and its core services—ranging from 
+                    digital marketing strategies to creative graphic design. Developed using <span className="cyan">React.Js, CSS and JavaScript</span>, the site focuses on clean visuals, 
+                    smooth user interaction, and brand storytelling. The layout reflects AdmireLB’s professionalism while highlighting their values, 
+                    client-centric approach, and long-standing industry experience.
+                    </>
+                    }
+                  ghLink="https://github.com/ProgSecDev/admire-lb"
+                />
               </GlareHover>
             </Col>
 
@@ -197,60 +178,24 @@ const Home = () => {
                 playOnce={false}
                 style={{ border: "none", background: "transparent" }}
               >
-              <ProjectCard
-                imgPath={pg}
-                isBlog={false}
-                title="Project 4"
-                description=""
-                ghLink="https://github.com/ProgSecDev/"
-              />
+                <ProjectCard
+                  imgPath={naimcenter}
+                  isBlog={false}
+                  title="Naim Center"
+                  description={
+                    <>
+                    This project is a modern, responsive website built for Naim Center, a rental hub based in Jounieh, Lebanon. The site showcases the 
+                    center’s core services—ranging from furnished apartments and studios to medical rentals and private storage. Developed using&nbsp;
+                    <span className="cyan">WordPress</span> technology, the website focuses on clean visuals, intuitive navigation, and a seamless user experience. 
+                    The layout reflects Naim Center’s professionalism while highlighting its flexibility, reliability, and commitment to 
+                    serving both residential and medical clients.
+                    </>
+                    }
+                  ghLink="https://github.com/ProgSecDev/Naim-Center-Project"
+                  link="https://www.naimcenter.com"
+                />
               </GlareHover>
             </Col>
-
-            <Col md={4} className="project-card">
-              <GlareHover
-                width="100%"
-                height="100%"
-                glareColor="#ffffff"
-                glareOpacity={0.25}
-                glareAngle={-30}
-                glareSize={300}
-                transitionDuration={800}
-                playOnce={false}
-                style={{ border: "none", background: "transparent" }}
-              >
-              <ProjectCard
-                imgPath={krypto}
-                isBlog={false}
-                title="Project 5"
-                description=""
-                ghLink="https://github.com/ProgSecDev/"
-                demoLink=""
-              />
-              </GlareHover>
-            </Col>
-
-            <Col md={4} className="project-card">
-              <GlareHover
-                width="100%"
-                height="100%"
-                glareColor="#ffffff"
-                glareOpacity={0.25}
-                glareAngle={-30}
-                glareSize={300}
-                transitionDuration={800}
-                playOnce={false}
-                style={{ border: "none", background: "transparent" }}
-              >
-              <ProjectCard
-                imgPath={kickstart}
-                isBlog={false}
-                title="Project 6"
-                description=""
-                ghLink="https://github.com/ProgSecDev/"
-              />
-              </GlareHover>
-            </Col> */}
           </Row>
         </Container>
       </Container>
