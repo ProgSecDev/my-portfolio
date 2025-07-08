@@ -116,7 +116,7 @@ html {
   
   .navbar-toggler span {
     display: block !important;
-    background-color: #7500fa !important;
+    background-color: var(--bold-word) !important;
     height: 4px !important;
     width: 27px !important;
     margin-top: 5px !important;
