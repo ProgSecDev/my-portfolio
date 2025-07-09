@@ -131,7 +131,8 @@ const Home = () => {
                   product categories (Blends & Powders) and packaging types (Jar, Sachet, Bags, Silver Vacuum Bag).
                   </>
                   }
-                  ghLink="https://github.com/ProgSecDev/spicy-food"
+                  // ghLink="https://github.com/ProgSecDev/spicy-food"
+                  link="https://progsecdev.github.io/spicy-food"
                 />
               </GlareHover>
             </Col>
@@ -151,17 +152,18 @@ const Home = () => {
                 <ProjectCard
                   imgPath={admirelb}
                   isBlog={false}
-                  title="AdmireLB"
+                  title="admirelB"
                   description={
                     <>
-                    This project is a modern, responsive website built for AdmireLB, a multinational advertising agency headquartered in Lebanon. 
+                    This project is a modern, responsive website built for admirelb, a multinational advertising agency headquartered in Lebanon. 
                     The site presents the agency’s mission, regional presence (Lebanon, Cyprus, KSA, Dubai, Qatar), and its core services—ranging from 
                     digital marketing strategies to creative graphic design. Developed using <span className="cyan">React.Js, CSS and JavaScript</span>, the site focuses on clean visuals, 
                     smooth user interaction, and brand storytelling. The layout reflects AdmireLB’s professionalism while highlighting their values, 
                     client-centric approach, and long-standing industry experience.
                     </>
                     }
-                  ghLink="https://github.com/ProgSecDev/admire-lb"
+                  // ghLink="https://github.com/ProgSecDev/admire-lb"
+                  link="https://progsecdev.github.io/admire-lb"
                 />
               </GlareHover>
             </Col>
@@ -191,7 +193,7 @@ const Home = () => {
                     serving both residential and medical clients.
                     </>
                     }
-                  ghLink="https://github.com/ProgSecDev/Naim-Center-Project"
+                  // ghLink="https://github.com/ProgSecDev/Naim-Center-Project"
                   link="https://www.naimcenter.com"
                 />
               </GlareHover>

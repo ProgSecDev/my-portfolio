@@ -501,7 +501,7 @@ html {
     border-radius: 50% !important;
     width: 100px !important;
     height: 100px !important;
-    display: table !important;
+    display: flex !important;
     box-shadow: 1px 1px 5px 3px var(--bold-word) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
