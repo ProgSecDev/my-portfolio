@@ -53,6 +53,10 @@ h1.white {
     box-shadow: 0 0 9px #fff;
 }
 
+.button {
+    width: 15rem;
+}
+
 input{
     background-color: var(--purple)
 }
