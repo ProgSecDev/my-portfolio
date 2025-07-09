@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.54863da2.css",
-    "main.js": "/my-portfolio/static/js/main.66f00951.js",
+    "main.js": "/my-portfolio/static/js/main.b48bce94.js",
     "static/media/admirelb.png": "/my-portfolio/static/media/admirelb.25e6be9077f8dbd7d2d9.png",
     "static/media/spicy-food.png": "/my-portfolio/static/media/spicy-food.db78eb27c4150d5ecd7d.png",
     "static/media/naimcenter.png": "/my-portfolio/static/media/naimcenter.2aaed4cca5c4436ef3f4.png",
     "static/media/Portfolio-profile.png": "/my-portfolio/static/media/Portfolio-profile.5a575b11735bb204fb6f.png",
-    "static/media/Elie-Ephram-Resume.pdf": "/my-portfolio/static/media/Elie-Ephram-Resume.7970568b0b8a8468c6e9.pdf",
+    "static/media/Elie Ephram - Resume.pdf": "/my-portfolio/static/media/Elie Ephram - Resume.e5726ac57a574d1ab732.pdf",
     "static/media/Logo.png": "/my-portfolio/static/media/Logo.56238329bdc7f99e88f0.png",
     "static/media/expressjs.png": "/my-portfolio/static/media/expressjs.135f755e60ad4cd2c9d3.png",
     "static/media/mssqlserver.png": "/my-portfolio/static/media/mssqlserver.17828bff3808f671e871.png",
@@ -25,10 +25,10 @@
     "static/media/tube-spinner.svg": "/my-portfolio/static/media/tube-spinner.fb0296ebd73e3f1b27dc.svg",
     "index.html": "/my-portfolio/index.html",
     "main.54863da2.css.map": "/my-portfolio/static/css/main.54863da2.css.map",
-    "main.66f00951.js.map": "/my-portfolio/static/js/main.66f00951.js.map"
+    "main.b48bce94.js.map": "/my-portfolio/static/js/main.b48bce94.js.map"
   },
   "entrypoints": [
     "static/css/main.54863da2.css",
-    "static/js/main.66f00951.js"
+    "static/js/main.b48bce94.js"
   ]
 }
