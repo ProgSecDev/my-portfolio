@@ -28,6 +28,19 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+  if (!load) {
+    const hash = window.location.hash;
+    if (hash) {
+      const el = document.querySelector(hash);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }
+}, [load]);
+
+
   return (
     <Router>
       <Preloader load={load} />
