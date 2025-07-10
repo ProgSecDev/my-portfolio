@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Routes,
   Navigate
@@ -28,28 +28,10 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  useEffect(() => {
-  if (!load) {
-    requestAnimationFrame(() => {
-      const hash = window.location.hash;
-      if (hash) {
-        const el = document.querySelector(hash);
-        if (el) {
-          const yOffset = 80;
-          const y = el.getBoundingClientRect().top + window.pageYOffset - yOffset;
-          window.scrollTo({ top: y, behavior: "smooth" });
-        }
-      }
-    });
-  }
-}, [load]);
-
-
-
   return (
     <Router>
       <Preloader load={load} />
-      <div className={`App ${load ? "no-scroll" : ""}`}>
+      <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
         <Routes>

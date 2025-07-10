@@ -61,7 +61,7 @@ html {
     opacity: 0;
   }
   
-  .no-scroll {
+  #no-scroll {
     overflow: hidden;
     height: 100vh;
   }
