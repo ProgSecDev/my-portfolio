@@ -132,7 +132,7 @@ const Home = () => {
                   </>
                   }
                   // ghLink="https://github.com/ProgSecDev/spicy-food"
-                  link="https://progsecdev.github.io/spicy-food"
+                  link="https://spicyfoodlb.com/"
                 />
               </GlareHover>
             </Col>
