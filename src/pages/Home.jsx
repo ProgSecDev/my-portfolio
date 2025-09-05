@@ -126,7 +126,7 @@ const Home = () => {
                   description={
                     <>
                   This project is a fully responsive static website developed for a Lebanese spice brand. The site showcases the company’s 
-                  history, values, and diverse product offerings—from vibrant spice blends to private-label packaging solutions. <span className="cyan">Built with React.Js, CSS, and JavaScript</span>, it features a sleek and visually rich layout, including high-resolution 
+                  history, values, and diverse product offerings—from vibrant spice blends to private-label packaging solutions. <span className="cyan">Built with HTML, CSS, JavaScript & React.Js</span>, it features a sleek and visually rich layout, including high-resolution 
                   images and intuitive navigation. The design emphasizes user-friendly experience and aesthetic appeal, highlighting key 
                   product categories (Blends & Powders) and packaging types (Jar, Sachet, Bags, Silver Vacuum Bag).
                   </>
@@ -157,7 +157,7 @@ const Home = () => {
                     <>
                     This project is a modern, responsive website built for admirelb, a multinational advertising agency headquartered in Lebanon. 
                     The site presents the agency’s mission, regional presence (Lebanon, Cyprus, KSA, Dubai, Qatar), and its core services—ranging from 
-                    digital marketing strategies to creative graphic design. Developed using <span className="cyan">React.Js, CSS and JavaScript</span>, the site focuses on clean visuals, 
+                    digital marketing strategies to creative graphic design. Developed using <span className="cyan">HTML, CSS, JavaScript, & React.Js</span>, the site focuses on clean visuals, 
                     smooth user interaction, and brand storytelling. The layout reflects AdmireLB’s professionalism while highlighting their values, 
                     client-centric approach, and long-standing industry experience.
                     </>
