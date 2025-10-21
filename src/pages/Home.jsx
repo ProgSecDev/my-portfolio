@@ -14,18 +14,6 @@ import naimcenter from "../assets/projects/naimcenter.png";
 import ContactForm from "../components/Contact/Contactus";
 import GlareHover from "../components/GlareHover/GlareHover.jsx";
 
-console.log({
-  GlareHover,
-  ProfileCard,
-  About,
-  Type,
-  Techstack,
-  Toolstack,
-  SplitText,
-  ProjectCard,
-  ContactForm
-});
-
 
 const Home = () => {
   return (
