@@ -12,7 +12,7 @@ import spicyfood from "../assets/projects/spicy-food.png";
 import admirelb from "../assets/projects/admirelb.png";
 import naimcenter from "../assets/projects/naimcenter.png";
 import ContactForm from "../components/Contact/Contactus";
-import GlareHover from "../components/Glare Hover/GlareHover";
+import GlareHover from "../components/GlareHover/GlareHover";
 
 const Home = () => {
   return (
