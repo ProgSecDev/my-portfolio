@@ -29,7 +29,7 @@ const Home = () => {
                 </span> */}
                 <SplitText
                   text="Hello there!"
-                  className="text-2xl font-semibold text-center"
+                  className="splitT text-2xl font-semibold text-center"
                   delay={100}
                   duration={0.6}
                   ease="power3.out"

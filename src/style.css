@@ -680,6 +680,7 @@ html {
   }
   
   @media (max-width: 767px) {
+    
     .resume-left {
       padding-right: 15px !important;
       padding-left: 15px !important;
@@ -795,4 +796,36 @@ html {
   }
   .fork-btn-inner::after {
     display: none !important;
+  }
+
+  @media (max-width: 480px) {
+    .home-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading-name {
+      margin: 0 auto;
+      margin-top: -20px;
+    }
+    
+    .splitT {
+      margin-top: -20px;
+    }
+  }
+  @media (max-width: 320px) {
+    .home-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heading-name {
+      margin-top: -20px;
+      margin: 0 auto;
+    }
+    .splitT {
+
+    }
   }

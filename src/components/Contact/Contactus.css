@@ -1,68 +1,191 @@
+/* 🌐 Base layout */
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  background: none;
 }
 
+/* 🧾 Form container */
 form {
-    max-width: 600px;
-    width: 100%;
-    background: none;
-    padding: 25px 25px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    color: #333;
-    margin: 25px;
+  max-width: 600px;
+  width: 100%;
+  background: none;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  margin: 25px auto;
 }
 
+/* 🏷️ Title */
 form h2 {
-    font-size: 30px;
-    text-align: center;
-    color: #fff;
+  font-size: clamp(1.8rem, 1.5vw + 1rem, 2.2rem);
+  text-align: center;
+  color: #fff;
+  margin-bottom: 25px;
+  line-height: 1.3;
 }
 
+/* 📦 Input group */
 form .input-box {
-    margin-top: 20px;
-    text-align: left;
-    color: #fff;
+  margin-top: 25px;
+  text-align: left;
+  color: #fff;
 }
 
+/* ✏️ Fields */
 .input-box .field {
-    width: 100%;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #ddd;
-    outline: none;
-    border-radius: 6px;
-    padding: 15px;
-    font-size: 16px;
-    color: #fff;
-    margin-top: 8px;
+  width: 100%;
+  height: 55px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  outline: none;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
+.input-box .field:focus {
+  border-color: #18ffff;
+  box-shadow: 0 0 6px rgba(24, 255, 255, 0.4);
+}
+
+/* 📝 Message box */
 .input-box .mess {
-    height: 200px;
+  height: 160px;
+  resize: none;
 }
 
+/* 🔘 Button */
 form button {
-    width: 100%;
-    height: 55px;
-    background: #18ffff;
-    border: none;
-    border-radius: 6px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: rgb(24, 2, 44) !important;
-    font-weight: 500;
-    margin-top: 25px;
-    transition: .5s;
+  width: 100%;
+  height: 58px;
+  background: #18ffff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 17px;
+  color: rgb(24, 2, 44);
+  font-weight: 600;
+  margin-top: 30px;
+  transition: 0.3s ease;
 }
 
 form button:hover {
-    color: #000 !important;
-  background-color: var(--bold-word) !important;
-  box-shadow: 0 0 9px #fff !important;
+  background-color: var(--bold-word, #00e6e6);
+  box-shadow: 0 0 10px #18ffff;
+}
+
+/* 📱 Tablets */
+@media (max-width: 1024px) {
+  form {
+    max-width: 90%;
+    padding: 25px;
+  }
+}
+
+/* 📱 Mobile (portrait & landscape) */
+@media (max-width: 768px) {
+  .contact {
+    align-items: flex-start;
+    padding: 3rem 0.5rem;
+  }
+
+  form {
+    width: 95%;
+    max-width: 95%;
+    padding: 25px 15px;
+    margin: 0 auto;
+  }
+
+  form h2 {
+    font-size: 1.7rem;
+  }
+
+  .input-box .field {
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+    padding: 16px;
+  }
+
+  .input-box .mess {
+    width: 100%;
+    height: 190px;
+  }
+
+  form button {
+    width: 100%;
+    height: 60px;
+    font-size: 15px;
+  }
+}
+
+/* 📱 Small mobile (≤480px) */
+@media (max-width: 480px) {
+  .contact {
+    padding: 2rem 0.3rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px 10px;
+    margin: 0 auto;
+  }
+
+  form h2 {
+    font-size: 1.5rem;
+  }
+
+  .input-box .field {
+    width: 100%;
+    height: 70px;
+    font-size: 15px;
+    padding: 18px;
+  }
+
+  .input-box .mess {
+    width: 100%;
+    height: 210px;
+  }
+
+  form button {
+    width: 100%;
+    height: 65px;
+    font-size: 15px;
+    border-radius: 10px;
+  }
+}
+
+/* 📱 Extra small (≤320px) */
+@media (max-width: 320px) {
+  form {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px 8px;
+  }
+
+  .input-box .field {
+    height: 70px;
+    font-size: 14px;
+    padding: 16px;
+  }
+
+  .input-box .mess {
+    height: 220px;
+  }
+
+  form button {
+    height: 65px;
+    font-size: 14px;
+  }
 }
