@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.e51c350f.css",
-    "main.js": "/my-portfolio/static/js/main.6dd1064c.js",
+    "main.js": "/my-portfolio/static/js/main.34cc7cda.js",
     "static/media/admirelb.png": "/my-portfolio/static/media/admirelb.810e4d54613f75dabad1.png",
     "static/media/spicy-food.png": "/my-portfolio/static/media/spicy-food.db78eb27c4150d5ecd7d.png",
+    "static/media/TechTitans.png": "/my-portfolio/static/media/TechTitans.f7bcb4848d8ca53b805e.png",
     "static/media/naimcenter.png": "/my-portfolio/static/media/naimcenter.2aaed4cca5c4436ef3f4.png",
     "static/media/Portfolio-profile.png": "/my-portfolio/static/media/Portfolio-profile.5a575b11735bb204fb6f.png",
     "static/media/Elie Ephram-CV-2025.pdf": "/my-portfolio/static/media/Elie Ephram-CV-2025.240080ca4b93bc6e8a7d.pdf",
@@ -25,10 +26,10 @@
     "static/media/tube-spinner.svg": "/my-portfolio/static/media/tube-spinner.fb0296ebd73e3f1b27dc.svg",
     "index.html": "/my-portfolio/index.html",
     "main.e51c350f.css.map": "/my-portfolio/static/css/main.e51c350f.css.map",
-    "main.6dd1064c.js.map": "/my-portfolio/static/js/main.6dd1064c.js.map"
+    "main.34cc7cda.js.map": "/my-portfolio/static/js/main.34cc7cda.js.map"
   },
   "entrypoints": [
     "static/css/main.e51c350f.css",
-    "static/js/main.6dd1064c.js"
+    "static/js/main.34cc7cda.js"
   ]
 }
