@@ -7,8 +7,8 @@ const Type = () => {
           options={{
             strings: [
               "Software Developer",
-              "Web Developer",
-              "Full Stack Developer"
+              "Full Stack Web Developer",
+              "AI & ML Integration"
             ],
             autoStart: true,
             loop: true,

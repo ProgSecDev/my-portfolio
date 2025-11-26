@@ -11,6 +11,7 @@ import ProjectCard from "../components/Projects/ProjectCard";
 import spicyfood from "../assets/projects/spicy-food.png";
 import admirelb from "../assets/projects/admirelb.png";
 import naimcenter from "../assets/projects/naimcenter.png";
+import techtitans from "../assets/projects/TechTitans.png";
 import ContactForm from "../components/Contact/Contactus";
 import GlareHover from "../components/GlareHover/GlareHover.jsx";
 
@@ -177,7 +178,7 @@ const Home = () => {
                     </>
                     }
                   // ghLink="https://github.com/ProgSecDev/admire-lb"
-                  link="https://progsecdev.github.io/admire-lb"
+                  link="https://www.admirelb.com"
                 />
               </GlareHover>
             </Col>
@@ -212,6 +213,43 @@ const Home = () => {
                 />
               </GlareHover>
             </Col>
+          </Row>
+
+          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+            <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
+                <ProjectCard
+                  imgPath={techtitans}
+                  isBlog={false}
+                  title="Tech Titans"
+                  description={
+                    <>
+                    TechTitans is a complete e-commerce ecosystem I built for selling laptops, desktops, gaming setups, and computer accessories. <br /> 
+                    The platform combines a sleek, responsive storefront with a powerful admin dashboard, giving full control over every aspect of the business, from inventory and pricing to customer engagement.
+                    The customer side delivers a smooth and intuitive experience: users can browse through categories, explore product specifications and images, compare variants (color, stock, etc.), and complete purchases securely — either by logging in or checking out as guests.
+                    The admin panel acts as the command center of the platform.
+                    Built using the MERN stack <span className="cyan">MongoDB, Express.js, React.js, Node.js</span>,It’s designed for speed, scalability, and ease of use and it'sa complete tech commerce solution that bridges functionality and aesthetics.
+                    </>
+                    }
+                  // ghLink="https://github.com/ProgSecDev/Naim-Center-Project"
+                  link=""
+                />
+              </GlareHover>
+            </Col>
+
+            <Col md={4} className="project-card"></Col>
+
+            <Col md={4} className="project-card"></Col>
           </Row>
         </Container>
       </Container>
