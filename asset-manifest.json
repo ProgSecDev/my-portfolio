@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.9cc4bb6f.css",
-    "main.js": "/my-portfolio/static/js/main.50a3686a.js",
+    "main.css": "/my-portfolio/static/css/main.fbba5d73.css",
+    "main.js": "/my-portfolio/static/js/main.7b75d214.js",
     "static/media/admirelb.png": "/my-portfolio/static/media/admirelb.810e4d54613f75dabad1.png",
+    "static/media/BigTrade.png": "/my-portfolio/static/media/BigTrade.b673ba9d5b7cbdc8cd1d.png",
     "static/media/spicy-food.png": "/my-portfolio/static/media/spicy-food.db78eb27c4150d5ecd7d.png",
     "static/media/TechTitans.png": "/my-portfolio/static/media/TechTitans.f7bcb4848d8ca53b805e.png",
     "static/media/naimcenter.png": "/my-portfolio/static/media/naimcenter.2aaed4cca5c4436ef3f4.png",
@@ -25,11 +26,11 @@
     "static/media/vscode.png": "/my-portfolio/static/media/vscode.77b822890ddb86f5d1ac.png",
     "static/media/tube-spinner.svg": "/my-portfolio/static/media/tube-spinner.fb0296ebd73e3f1b27dc.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.9cc4bb6f.css.map": "/my-portfolio/static/css/main.9cc4bb6f.css.map",
-    "main.50a3686a.js.map": "/my-portfolio/static/js/main.50a3686a.js.map"
+    "main.fbba5d73.css.map": "/my-portfolio/static/css/main.fbba5d73.css.map",
+    "main.7b75d214.js.map": "/my-portfolio/static/js/main.7b75d214.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cc4bb6f.css",
-    "static/js/main.50a3686a.js"
+    "static/css/main.fbba5d73.css",
+    "static/js/main.7b75d214.js"
   ]
 }
