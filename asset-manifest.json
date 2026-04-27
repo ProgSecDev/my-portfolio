@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.fbba5d73.css",
-    "main.js": "/my-portfolio/static/js/main.ad117b7d.js",
+    "main.js": "/my-portfolio/static/js/main.38942a7f.js",
     "static/media/admirelb.png": "/my-portfolio/static/media/admirelb.810e4d54613f75dabad1.png",
     "static/media/BigTrade.png": "/my-portfolio/static/media/BigTrade.b673ba9d5b7cbdc8cd1d.png",
     "static/media/spicy-food.png": "/my-portfolio/static/media/spicy-food.db78eb27c4150d5ecd7d.png",
     "static/media/TechTitans.png": "/my-portfolio/static/media/TechTitans.f7bcb4848d8ca53b805e.png",
     "static/media/naimcenter.png": "/my-portfolio/static/media/naimcenter.2aaed4cca5c4436ef3f4.png",
+    "static/media/Elie-Eph-Resume.pdf": "/my-portfolio/static/media/Elie-Eph-Resume.f65b9da1f2d3d40c80f6.pdf",
     "static/media/Portfolio-profile.png": "/my-portfolio/static/media/Portfolio-profile.5a575b11735bb204fb6f.png",
-    "static/media/Elie Ephram-CV-2025.pdf": "/my-portfolio/static/media/Elie Ephram-CV-2025.240080ca4b93bc6e8a7d.pdf",
     "static/media/Logo.png": "/my-portfolio/static/media/Logo.56238329bdc7f99e88f0.png",
     "static/media/expressjs.png": "/my-portfolio/static/media/expressjs.135f755e60ad4cd2c9d3.png",
     "static/media/mssqlserver.png": "/my-portfolio/static/media/mssqlserver.17828bff3808f671e871.png",
@@ -27,10 +27,10 @@
     "static/media/tube-spinner.svg": "/my-portfolio/static/media/tube-spinner.fb0296ebd73e3f1b27dc.svg",
     "index.html": "/my-portfolio/index.html",
     "main.fbba5d73.css.map": "/my-portfolio/static/css/main.fbba5d73.css.map",
-    "main.ad117b7d.js.map": "/my-portfolio/static/js/main.ad117b7d.js.map"
+    "main.38942a7f.js.map": "/my-portfolio/static/js/main.38942a7f.js.map"
   },
   "entrypoints": [
     "static/css/main.fbba5d73.css",
-    "static/js/main.ad117b7d.js"
+    "static/js/main.38942a7f.js"
   ]
 }
