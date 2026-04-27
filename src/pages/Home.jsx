@@ -12,7 +12,7 @@ import spicyfood from "../assets/projects/spicy-food.png";
 import admirelb from "../assets/projects/admirelb.png";
 import naimcenter from "../assets/projects/naimcenter.png";
 import techtitans from "../assets/projects/TechTitans.png";
-import bigtrade from "../assets/projects/BigTrade.png";
+import TechBridge from "../assets/projects/BigTrade.png";
 import ContactForm from "../components/Contact/Contactus";
 import GlareHover from "../components/GlareHover/GlareHover.jsx";
 import RotatingText from "../components/RotatingText/RotatingText.jsx";
@@ -273,12 +273,12 @@ const Home = () => {
                 style={{ border: "none", background: "transparent" }}
               >
                 <ProjectCard
-                  imgPath={bigtrade}
+                  imgPath={TechBridge}
                   isBlog={false}
-                  title="Big Trade"
+                  title="Tech Bridge"
                   description={
                     <>
-                      TechBridge Group is your end-to-end IT partner, bridging the gap between technology and business with reliable, scalable, and 
+                      Tech Bridge Group is your end-to-end IT partner, bridging the gap between technology and business with reliable, scalable, and 
                       affordable solutions. It is designed to support secure network infrastructure, deliver enterprise-grade WiFi with site surveys 
                       and tuning, engineer resilient servers and storage for maximum uptime, and deploy smart CCTV systems for monitoring and 
                       retention. Developed using <span className="cyan">HTML, CSS, JavaScript, & React.Js</span>, the website focuses on clean visuals, 
