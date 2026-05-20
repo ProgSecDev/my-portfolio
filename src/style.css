@@ -4,12 +4,9 @@
 }
 
 html {
-    --section-background-color: linear-gradient(to left, rgb(0, 0, 0), rgb(26, 35, 126));
+    --section-background-color: linear-gradient(to left, rgb(37, 0, 42), rgb(0, 4, 57));
   
-    --image-gradient: linear-gradient(
-      to bottom left,
-      rgba(5, 8, 40, 0.87), rgba(1, 4, 39, 0.925)
-    );
+    --image-gradient: linear-gradient(to left, rgb(37, 0, 42), rgb(0, 4, 57));
   
     --imp-text-color: #7500fa;
     --yellow-A400: #FFEA00;
@@ -285,8 +282,8 @@ html {
   
   .home-section {
     position: relative;
-    z-index: -1;
-    background-image: #212121;
+    z-index: 0;
+    background-image: var(--section-background-color) !important;
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 30px !important;
@@ -324,6 +321,53 @@ html {
   }
   
   @media (max-width: 767px) {
+    .home-content {
+    padding: 5rem 1rem 1rem !important;
+    overflow: hidden;
+  }
+
+  .home-header {
+    padding-top: 20px !important;
+  }
+
+  .heading {
+    font-size: 1.6em !important;
+    padding-left: 10px !important;
+  }
+
+  .heading-name {
+    font-size: 1.3em !important;
+    padding-left: 10px !important;
+    overflow: hidden !important;
+    max-width: 100%;
+  }
+
+  .home-section {
+    overflow-x: hidden !important;
+  }.home-content {
+    padding: 5rem 1rem 1rem !important;
+    overflow: hidden;
+  }
+
+  .home-header {
+    padding-top: 20px !important;
+  }
+
+  .heading {
+    font-size: 1.6em !important;
+    padding-left: 10px !important;
+  }
+
+  .heading-name {
+    font-size: 1.3em !important;
+    padding-left: 10px !important;
+    overflow: hidden !important;
+    max-width: 100%;
+  }
+
+  .home-section {
+    overflow-x: hidden !important;
+  }
     .Typewriter__wrapper {
       font-size: 1.4em !important;
       font-weight: 500 !important;

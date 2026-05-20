@@ -10,3 +10,9 @@ root.render(
   </React.StrictMode>
 );
 
+// Suppress ResizeObserver loop warning
+const resizeObserverErr = window.onerror;
+window.onerror = (msg, ...args) => {
+  if (msg.includes('ResizeObserver loop')) return true;
+  return resizeObserverErr?.(...args);
+};

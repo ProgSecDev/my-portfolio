@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import profileImage from "../assets/Portfolio-profile.png";
-import ProfileCard from "../components/ProfileCard/ProfileCard";
+import profileImage from "../assets/Profile-noBG.png";
 import About from "../components/Home/About";
 // import Type from "../components/Home/Type";
 import Techstack from "../components/Skillset/Techstack";
@@ -16,16 +15,30 @@ import TechBridge from "../assets/projects/BigTrade.png";
 import ContactForm from "../components/Contact/Contactus";
 import GlareHover from "../components/GlareHover/GlareHover.jsx";
 import RotatingText from "../components/RotatingText/RotatingText.jsx";
+import SplashCursor from '../components/SplashCursor/SplashCursor.jsx'
+import ElectricBorder from "../components/ElectricBorder/ElectricBorder.jsx";
 
 
 const Home = () => {
   return (
     <section>
+      <SplashCursor
+        DENSITY_DISSIPATION={3.5}
+        VELOCITY_DISSIPATION={2}
+        PRESSURE={0.2}
+        CURL={5}
+        SPLAT_RADIUS={0.20}
+        SPLAT_FORCE={4000}
+        COLOR_UPDATE_SPEED={3}
+        SHADING
+        RAINBOW_MODE={false}
+        COLOR="#8C9EFF"
+      />
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
           <Row>
-            <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+            <Col md={7} xs={12} className="home-header">
+              <h1 style={{ paddingBottom: 15, paddingTop: 20 }} className="heading">
                 {" "}
                 {/* <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -47,7 +60,7 @@ const Home = () => {
 
               <h1 className="heading-name">
                 I'm a <strong> <RotatingText
-                  texts={['Software Developer', 'Full Stack Web Developer', 'AI & ML Integration']}
+                  texts={['Software Developer', 'Full Stack Developer', 'Mobile App Developer', 'E-Commerce Expert']}
                   mainClassName="px-2 sm:px-2 md:px-3 bg-cyan-300 text-black overflow-hidden py-0.5 sm:py-1 md:py-2 justify-center rounded-lg"
                   staggerFrom={"last"}
                   initial={{ y: "100%" }}
@@ -61,7 +74,7 @@ const Home = () => {
                 </strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div style={{ padding: 30, textAlign: "left" }}>
                 {/* <Type /> */}
               </div>
             </Col>
@@ -77,18 +90,51 @@ const Home = () => {
                   zIndex: "1",
                 }}
               /> */}
-              <ProfileCard
-                name="Elie Ephram"
-                title="Software & Web Developer"
-                // handle=""
-                status="Online"
-                contactText="Contact Me"
-                avatarUrl={profileImage}
-                showUserInfo={true}
-                enableTilt={true}
-                enableMobileTilt={false}
-                onContactClick={() => console.log('Contact clicked')}
-              />
+              <ElectricBorder
+                color="#18ffff"
+                speed={1}
+                chaos={0.12}
+                borderRadius={16}
+              >
+                <div style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  padding: "16px 16px 16px",
+                  gap: "6px",
+                }}>
+                  {/* Name & subtitle */}
+                  <h2 style={{ color: "white", margin: 0, fontSize: "2rem", fontWeight: 700 }}>
+                    Elie Ephram
+                  </h2>
+                  <p style={{ color: "#18ffff", margin: 0, fontSize: "1.2rem", opacity: 0.85 }}>
+                    Software Developer
+                  </p>
+
+                  {/* Profile image */}
+                  <img
+    src={profileImage}
+    alt="Elie Ephram"
+    style={{
+      width: "80%",
+      objectFit: "cover",
+      borderRadius: "12px",
+      marginTop: "6px",
+    }}
+  />
+
+                  {/* Contact Me button - aligned bottom right */}
+                  <div style={{ width: "100%", display: "flex", justifyContent: "flex-end" }}>
+                      <button
+  className="btn btn-primary"
+  style={{ borderRadius: "8px", padding: "10px", width: "100%", marginTop: "6px" }}
+  onClick={() => document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' })}
+>
+  Contact Me
+</button>
+                  </div>
+                </div>
+              </ElectricBorder>
             </Col>
           </Row>
         </Container>
@@ -278,12 +324,12 @@ const Home = () => {
                   title="Tech Bridge"
                   description={
                     <>
-                      Tech Bridge Group is your end-to-end IT partner, bridging the gap between technology and business with reliable, scalable, and 
-                      affordable solutions. It is designed to support secure network infrastructure, deliver enterprise-grade WiFi with site surveys 
-                      and tuning, engineer resilient servers and storage for maximum uptime, and deploy smart CCTV systems for monitoring and 
-                      retention. Developed using <span className="cyan">HTML, CSS, JavaScript, & React.Js</span>, the website focuses on clean visuals, 
-                      and smooth user interaction. The friendly IT support and strategic consultancy keep your roadmap clear and your operations 
-                      efficient, while open-source options ensure flexibility without vendor lock-in and it helps organizations across Lebanon and 
+                      Tech Bridge Group is your end-to-end IT partner, bridging the gap between technology and business with reliable, scalable, and
+                      affordable solutions. It is designed to support secure network infrastructure, deliver enterprise-grade WiFi with site surveys
+                      and tuning, engineer resilient servers and storage for maximum uptime, and deploy smart CCTV systems for monitoring and
+                      retention. Developed using <span className="cyan">HTML, CSS, JavaScript, & React.Js</span>, the website focuses on clean visuals,
+                      and smooth user interaction. The friendly IT support and strategic consultancy keep your roadmap clear and your operations
+                      efficient, while open-source options ensure flexibility without vendor lock-in and it helps organizations across Lebanon and
                       the region innovate, connect, and build with confidence.
                     </>
                   }
