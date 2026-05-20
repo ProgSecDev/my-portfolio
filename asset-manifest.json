@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.fbba5d73.css",
-    "main.js": "/my-portfolio/static/js/main.38942a7f.js",
+    "main.css": "/my-portfolio/static/css/main.4ceee608.css",
+    "main.js": "/my-portfolio/static/js/main.065d715f.js",
     "static/media/admirelb.png": "/my-portfolio/static/media/admirelb.810e4d54613f75dabad1.png",
     "static/media/BigTrade.png": "/my-portfolio/static/media/BigTrade.b673ba9d5b7cbdc8cd1d.png",
     "static/media/spicy-food.png": "/my-portfolio/static/media/spicy-food.db78eb27c4150d5ecd7d.png",
-    "static/media/TechTitans.png": "/my-portfolio/static/media/TechTitans.f7bcb4848d8ca53b805e.png",
-    "static/media/naimcenter.png": "/my-portfolio/static/media/naimcenter.2aaed4cca5c4436ef3f4.png",
+    "static/media/Solar-Panels-System.png": "/my-portfolio/static/media/Solar-Panels-System.c1e1bcb95c1e33bf3dad.png",
+    "static/media/five-trees.png": "/my-portfolio/static/media/five-trees.fdcca36b5aaba0526185.png",
     "static/media/Elie-Eph-Resume.pdf": "/my-portfolio/static/media/Elie-Eph-Resume.f65b9da1f2d3d40c80f6.pdf",
-    "static/media/Portfolio-profile.png": "/my-portfolio/static/media/Portfolio-profile.5a575b11735bb204fb6f.png",
+    "static/media/Profile-noBG.png": "/my-portfolio/static/media/Profile-noBG.b7eff9a515b35acafbdf.png",
     "static/media/Logo.png": "/my-portfolio/static/media/Logo.56238329bdc7f99e88f0.png",
+    "static/media/claude-ai-icon.png": "/my-portfolio/static/media/claude-ai-icon.78befb4e9754ca033953.png",
     "static/media/expressjs.png": "/my-portfolio/static/media/expressjs.135f755e60ad4cd2c9d3.png",
     "static/media/mssqlserver.png": "/my-portfolio/static/media/mssqlserver.17828bff3808f671e871.png",
     "static/media/python.png": "/my-portfolio/static/media/python.915ddf2250ee2ec23131.png",
@@ -26,11 +27,11 @@
     "static/media/vscode.png": "/my-portfolio/static/media/vscode.77b822890ddb86f5d1ac.png",
     "static/media/tube-spinner.svg": "/my-portfolio/static/media/tube-spinner.fb0296ebd73e3f1b27dc.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.fbba5d73.css.map": "/my-portfolio/static/css/main.fbba5d73.css.map",
-    "main.38942a7f.js.map": "/my-portfolio/static/js/main.38942a7f.js.map"
+    "main.4ceee608.css.map": "/my-portfolio/static/css/main.4ceee608.css.map",
+    "main.065d715f.js.map": "/my-portfolio/static/js/main.065d715f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbba5d73.css",
-    "static/js/main.38942a7f.js"
+    "static/css/main.4ceee608.css",
+    "static/js/main.065d715f.js"
   ]
 }
