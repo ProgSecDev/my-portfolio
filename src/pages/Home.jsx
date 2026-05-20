@@ -9,8 +9,8 @@ import SplitText from "../components/SplitText/SplitText";
 import ProjectCard from "../components/Projects/ProjectCard";
 import spicyfood from "../assets/projects/spicy-food.png";
 import admirelb from "../assets/projects/admirelb.png";
-import naimcenter from "../assets/projects/naimcenter.png";
-import techtitans from "../assets/projects/TechTitans.png";
+import fivetrees from "../assets/projects/five-trees.png";
+import solarpanel from "../assets/projects/Solar-Panels-System.png";
 import TechBridge from "../assets/projects/BigTrade.png";
 import ContactForm from "../components/Contact/Contactus";
 import GlareHover from "../components/GlareHover/GlareHover.jsx";
@@ -113,25 +113,25 @@ const Home = () => {
 
                   {/* Profile image */}
                   <img
-    src={profileImage}
-    alt="Elie Ephram"
-    style={{
-      width: "80%",
-      objectFit: "cover",
-      borderRadius: "12px",
-      marginTop: "6px",
-    }}
-  />
+                    src={profileImage}
+                    alt="Elie Ephram"
+                    style={{
+                      width: "80%",
+                      objectFit: "cover",
+                      borderRadius: "12px",
+                      marginTop: "6px",
+                    }}
+                  />
 
                   {/* Contact Me button - aligned bottom right */}
                   <div style={{ width: "100%", display: "flex", justifyContent: "flex-end" }}>
-                      <button
-  className="btn btn-primary"
-  style={{ borderRadius: "8px", padding: "10px", width: "100%", marginTop: "6px" }}
-  onClick={() => document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' })}
->
-  Contact Me
-</button>
+                    <button
+                      className="btn btn-primary"
+                      style={{ borderRadius: "8px", padding: "10px", width: "100%", marginTop: "6px" }}
+                      onClick={() => document.getElementById('contact-me').scrollIntoView({ behavior: 'smooth' })}
+                    >
+                      Contact Me
+                    </button>
                   </div>
                 </div>
               </ElectricBorder>
@@ -255,20 +255,20 @@ const Home = () => {
                 style={{ border: "none", background: "transparent" }}
               >
                 <ProjectCard
-                  imgPath={naimcenter}
+                  imgPath={fivetrees}
                   isBlog={false}
-                  title="Naim Center"
+                  title="Five Trees"
                   description={
                     <>
-                      This project is a modern, responsive website built for Naim Center, a rental hub based in Jounieh, Lebanon. The site showcases the
-                      center’s core services—ranging from furnished apartments and studios to medical rentals and private storage. Developed using&nbsp;
-                      <span className="cyan">WordPress</span> technology, the website focuses on clean visuals, intuitive navigation, and a seamless user experience.
-                      The layout reflects Naim Center’s professionalism while highlighting its flexibility, reliability, and commitment to
-                      serving both residential and medical clients.
+                      Five Trees Global Trading is a fully responsive branding and informational website built with <span className="cyan"> React.js</span>, crafted for a Cyprus-based Mediterranean export 
+                      company specializing in halloumi cheese and extra virgin olive oil. The site presents the company's mission, values, and product offerings through 
+                      a clean and elegant design that reflects the authenticity and craftsmanship behind every product. With a focus on storytelling and brand identity, 
+                      the website highlights Five Trees' commitment to quality, sustainability, and tradition — connecting trusted Cypriot producers with international 
+                      markets through a polished and professional digital presence..
                     </>
                   }
                   // ghLink="https://github.com/ProgSecDev/Naim-Center-Project"
-                  link="https://www.naimcenter.com"
+                  link="https://www.fivetrees-cy.com"
                 />
               </GlareHover>
             </Col>
@@ -288,16 +288,18 @@ const Home = () => {
                 style={{ border: "none", background: "transparent" }}
               >
                 <ProjectCard
-                  imgPath={techtitans}
+                  imgPath={solarpanel}
                   isBlog={false}
-                  title="Tech Titans"
+                  title="Smart Solar System"
                   description={
                     <>
-                      TechTitans is a complete e-commerce ecosystem I built for selling laptops, desktops, gaming setups, and computer accessories. <br />
-                      The platform combines a sleek, responsive storefront with a powerful admin dashboard, giving full control over every aspect of the business, from inventory and pricing to customer engagement.
-                      The customer side delivers a smooth and intuitive experience: users can browse through categories, explore product specifications and images, compare variants (color, stock, etc.), and complete purchases securely — either by logging in or checking out as guests.
-                      The admin panel acts as the command center of the platform.
-                      Built using the MERN stack <span className="cyan">MongoDB, Express.js, React.js, Node.js</span>,It’s designed for speed, scalability, and ease of use and it'sa complete tech commerce solution that bridges functionality and aesthetics.
+                      SSP is a full-stack e-commerce platform I built from the ground up using the MERN stack <span className="cyan"> (MongoDB, Express.js, React.js, Node.js)</span>, 
+                      designed to bring clean, portable energy solutions to consumers. The platform offers a curated catalog of cutting-edge products including portable
+                      power stations, home energy storage systems, expansion batteries, and portable solar panels. The customer-facing storefront delivers a seamless shopping experience with intuitive product browsing, 
+                      detailed specifications, variant selection, and a secure checkout flow supporting both guest and authenticated users. On the backend, 
+                      a robust admin dashboard provides full control over inventory management, product listings, order tracking, and customer data. Built with scalability 
+                      and performance in mind, SSP leverages MongoDB's flexible document model for product data, JWT-based authentication for security, 
+                      and a responsive React frontend that delivers a polished experience across all devices — making sustainable energy accessible with just a few clicks.
                     </>
                   }
                   // ghLink="https://github.com/ProgSecDev/Naim-Center-Project"
@@ -334,7 +336,7 @@ const Home = () => {
                     </>
                   }
                   // ghLink="https://github.com/ProgSecDev/big-trade"
-                  link="https://github.com/ProgSecDev/big-trade"
+                  link="https://www.tech-bridgegroup.com/"
                 />
               </GlareHover>
             </Col>

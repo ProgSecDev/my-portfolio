@@ -4,6 +4,7 @@ import { Col, Row } from "react-bootstrap";
 import vscode from '../../assets/skills/vscode.png';
 import postman from '../../assets/skills/postman.png';
 import visualstudio from '../../assets/skills/Visual_Studio.png';
+import claudeai from '../../assets/skills/claude-ai-icon.png';
 
 const Toolstack = () => {
   return (
@@ -16,6 +17,9 @@ const Toolstack = () => {
       </Col>
       <Col xs={6} md={2} className="tech-icons">
         <img src={visualstudio} alt="html"/>
+      </Col>
+      <Col xs={6} md={2} className="tech-icons">
+        <img src={claudeai} alt="html"/>
       </Col>
     </Row>
   );
