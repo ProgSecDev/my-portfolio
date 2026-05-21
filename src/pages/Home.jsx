@@ -25,14 +25,14 @@ const Home = () => {
       <SplashCursor
         DENSITY_DISSIPATION={3.5}
         VELOCITY_DISSIPATION={2}
-        PRESSURE={0.2}
+        PRESSURE={0.3}
         CURL={5}
-        SPLAT_RADIUS={0.20}
-        SPLAT_FORCE={4000}
-        COLOR_UPDATE_SPEED={3}
+        SPLAT_RADIUS={0.25}
+        SPLAT_FORCE={5000}
+        COLOR_UPDATE_SPEED={5}
         SHADING
         RAINBOW_MODE={false}
-        COLOR="#8C9EFF"
+        COLOR="#18FFFF"
       />
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
@@ -341,14 +341,14 @@ const Home = () => {
               </GlareHover>
             </Col>
 
-            <Col md={4} className="project-card"></Col>
+            {/* <Col md={4} className="project-card"></Col>
 
-            <Col md={4} className="project-card"></Col>
+            <Col md={4} className="project-card"></Col> */}
           </Row>
         </Container>
       </Container>
 
-      <Container style={{ padding: "60px" }} id="contact-me">
+      <Container style={{ padding: "2px" }} id="contact-me">
         <ContactForm />
       </Container>
     </section>
