@@ -12,6 +12,7 @@ import admirelb from "../assets/projects/admirelb.png";
 import fivetrees from "../assets/projects/five-trees.png";
 import solarpanel from "../assets/projects/Solar-Panels-System.png";
 import TechBridge from "../assets/projects/BigTrade.png";
+import aishoppingassistant from "../assets/projects/ai-shopping-assistant.png";
 import ContactForm from "../components/Contact/Contactus";
 import GlareHover from "../components/GlareHover/GlareHover.jsx";
 import RotatingText from "../components/RotatingText/RotatingText.jsx";
@@ -26,12 +27,12 @@ const Home = () => {
         DENSITY_DISSIPATION={3.5}
         VELOCITY_DISSIPATION={2}
         PRESSURE={0.3}
-        CURL={5}
-        SPLAT_RADIUS={0.25}
-        SPLAT_FORCE={5000}
+        CURL={3}
+        SPLAT_RADIUS={0.10}
+        SPLAT_FORCE={4000}
         COLOR_UPDATE_SPEED={5}
         SHADING
-        RAINBOW_MODE={false}
+        RAINBOW_MODE={true}
         COLOR="#18FFFF"
       />
       <Container fluid className="home-section" id="home">
@@ -260,10 +261,10 @@ const Home = () => {
                   title="Five Trees"
                   description={
                     <>
-                      Five Trees Global Trading is a fully responsive branding and informational website built with <span className="cyan"> React.js</span>, crafted for a Cyprus-based Mediterranean export 
-                      company specializing in halloumi cheese and extra virgin olive oil. The site presents the company's mission, values, and product offerings through 
-                      a clean and elegant design that reflects the authenticity and craftsmanship behind every product. With a focus on storytelling and brand identity, 
-                      the website highlights Five Trees' commitment to quality, sustainability, and tradition — connecting trusted Cypriot producers with international 
+                      Five Trees Global Trading is a fully responsive branding and informational website built with <span className="cyan"> React.js</span>, crafted for a Cyprus-based Mediterranean export
+                      company specializing in halloumi cheese and extra virgin olive oil. The site presents the company's mission, values, and product offerings through
+                      a clean and elegant design that reflects the authenticity and craftsmanship behind every product. With a focus on storytelling and brand identity,
+                      the website highlights Five Trees' commitment to quality, sustainability, and tradition — connecting trusted Cypriot producers with international
                       markets through a polished and professional digital presence..
                     </>
                   }
@@ -290,15 +291,16 @@ const Home = () => {
                 <ProjectCard
                   imgPath={solarpanel}
                   isBlog={false}
+                  availableOnRequest
                   title="Smart Solar System"
                   description={
                     <>
-                      SSP is a full-stack e-commerce platform I built from the ground up using the MERN stack <span className="cyan"> (MongoDB, Express.js, React.js, Node.js)</span>, 
+                      SSP is a full-stack e-commerce platform I built from the ground up using the MERN stack <span className="cyan"> (MongoDB, Express.js, React.js, Node.js)</span>,
                       designed to bring clean, portable energy solutions to consumers. The platform offers a curated catalog of cutting-edge products including portable
-                      power stations, home energy storage systems, expansion batteries, and portable solar panels. The customer-facing storefront delivers a seamless shopping experience with intuitive product browsing, 
-                      detailed specifications, variant selection, and a secure checkout flow supporting both guest and authenticated users. On the backend, 
-                      a robust admin dashboard provides full control over inventory management, product listings, order tracking, and customer data. Built with scalability 
-                      and performance in mind, SSP leverages MongoDB's flexible document model for product data, JWT-based authentication for security, 
+                      power stations, home energy storage systems, expansion batteries, and portable solar panels. The customer-facing storefront delivers a seamless shopping experience with intuitive product browsing,
+                      detailed specifications, variant selection, and a secure checkout flow supporting both guest and authenticated users. On the backend,
+                      a robust admin dashboard provides full control over inventory management, product listings, order tracking, and customer data. Built with scalability
+                      and performance in mind, SSP leverages MongoDB's flexible document model for product data, JWT-based authentication for security,
                       and a responsive React frontend that delivers a polished experience across all devices — making sustainable energy accessible with just a few clicks.
                     </>
                   }
@@ -337,6 +339,44 @@ const Home = () => {
                   }
                   // ghLink="https://github.com/ProgSecDev/big-trade"
                   link="https://www.tech-bridgegroup.com/"
+                />
+              </GlareHover>
+            </Col>
+
+            <Col md={4} className="project-card">
+              <GlareHover
+                width="100%"
+                height="100%"
+                glareColor="#ffffff"
+                glareOpacity={0.25}
+                glareAngle={-30}
+                glareSize={300}
+                transitionDuration={800}
+                playOnce={false}
+                style={{ border: "none", background: "transparent" }}
+              >
+                <ProjectCard
+                  imgPath={aishoppingassistant}
+                  isBlog={false}
+                  availableOnRequest
+                  title="Nexiva — AI Shopping Assistant"
+                  description={
+                    <>
+                      Nexiva is a conversational AI shopping assistant built with <span className="cyan"> Python + Streamlit, powered by Claude (Anthropic) </span> as its reasoning engine.
+                      It connects to a MongoDB product catalog and lets users describe what they're looking for in natural language — Nexiva then intelligently matches and recommends products in real time.
+                      <ol style={{ marginTop: "10px", paddingLeft: "18px", lineHeight: "1.9" }}>
+                        <li><span className="cyan">Claude-powered recommendations</span> — understands context, follow-ups, synonyms, and conversational nuance.</li>
+                        <li><span className="cyan">Smart pre-filtering</span> — keyword scoring reduces token usage by ~80% before hitting the Claude API.</li>
+                        <li><span className="cyan">Multi-turn memory</span> — tracks conversation history for follow-up queries like "show me something cheaper".</li>
+                        <li><span className="cyan">Live product panel</span> — renders products with images, prices, discount badges, and reason tags.</li>
+                        <li><span className="cyan">Voice responses</span> — optional TTS playback via pyttsx3 or gTTS.</li>
+                        <li><span className="cyan">MongoDB integration</span> — live catalog with TTL-cached queries for performance.</li>
+                        <li><span className="cyan">Modern dark UI</span> — custom CSS with sidebar, status indicators, and zoomable image modals.</li>
+                      </ol>
+                    </>
+                  }
+                // ghLink="https://github.com/ProgSecDev/big-trade"
+                // link="https://www.tech-bridgegroup.com/"
                 />
               </GlareHover>
             </Col>

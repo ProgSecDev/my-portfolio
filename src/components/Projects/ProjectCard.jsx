@@ -18,6 +18,21 @@ const ProjectCard = (props) => {
       />
       <Card.Body style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
         <Card.Title>{props.title}</Card.Title>
+        {props.availableOnRequest && (
+          <div style={{
+            display: "inline-block",
+            padding: "4px 12px",
+            borderRadius: "20px",
+            border: "1px solid #18ffff",
+            color: "#18ffff",
+            fontSize: "0.75rem",
+            letterSpacing: "0.05em",
+            opacity: 0.85,
+          }}>
+            🔒 Demo Available Upon Request
+          </div>
+        )}
+
 
         <Button
           variant="outline-info"
