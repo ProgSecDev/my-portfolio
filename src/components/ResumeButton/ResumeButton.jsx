@@ -1,6 +1,6 @@
 import React from 'react';
 import './ResumeButton.css';
-import resume from '../../assets/Elie-Eph-Resume.pdf';
+import resume from '../../assets/Elie-Ephram-CV.pdf';
 
 const ResumeButton = () => {
   const handleClick = () => {
