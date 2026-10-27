@@ -48,6 +48,7 @@ function NavBar() {
   }, [activeLink]);
 
   return (
+    
     <Navbar
       expanded={expand}
       fixed="top"

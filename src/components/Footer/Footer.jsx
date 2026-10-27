@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const Footer = () => {
   let date = new Date();
   let year = date.getFullYear();
+  
   return (
     <Container fluid className="footer">
       <Row>

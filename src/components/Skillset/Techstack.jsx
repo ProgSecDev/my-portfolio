@@ -15,6 +15,7 @@ import bootstrap from '../../assets/skills/bootstrap.png';
 import typescript from '../../assets/skills/TypeScript.png';
 import python from '../../assets/skills/python.png';
 
+
 const Techstack = () => {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
